@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import 'scss/variables.scss';
+@import 'scss/reset.scss';
+@import 'scss/header.scss';
+@import 'scss/footer.scss';
+@import 'scss/medias.scss';
+
+html {
+    font-family: 'Ubuntu';
+}
+body {
+    margin: 0;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background-image: linear-gradient(to right bottom, #FFF, $bluegreen, #FFF);
+}
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+/* END HEADER */
+
+/* FOOTER */
+
+/* END FOOTER */
+
+/* BOOTSTRAP */
+.form-control {
+    border: 0px;
+    border-radius: 0px !important;
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 1px dashed #189AB4 !important;
+}
+input:focus, textarea:focus {
+    background: rgba(0,0,0,.7);
+    // opacity: 0.2;
+}
+
+/* GENERAL */
+.text-center {
+    text-align: center;
+}
+.f-1.5 {
+    font-size: 1.5rem;
+}
+.f-2 {
+    font-size: 2rem;
+}
+.color--navyblue {
+    color: $navyblue;
+}
+.main-layout { /*container {*/
+    /* max-width: 1200px; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* HOME */
+.home__title {
+    text-align: center;
+    color: $bluegrotto;
+    letter-spacing: 5px;
+}
+.home__title span {
+    color: $navyblue;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.home {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.home__image {
+    max-width: 600px;
+}
+.home__video {
+    /* max-width: 650px; */
+    max-width: 100%;
+    padding: 30px 20px;
+}
+.home__text {
+    padding-left: 25px;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+.home__text ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+.home__text ul li {
+    padding: 10px;
+}
+
+/* SKILLS */
+.container__skills {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    // @include lg {
+    //     // flex-wrap: wrap;
+    // }
+}
+.skills__icon {
+    margin: 5px;
+    transition: 1s;
+}
+.skills__icon:hover {
+    transform: rotateY(180deg);
+}
+.skills__type {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.type__title {
+    display: block;
+}
+.skills {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+.skills__image {
+    max-width: 120px;
+    padding: 10px;
+}
+.skills:hover {
+    transform: scale(1.2);
+}
+.skills__title {
+    margin: 0;
+}
+
+/* PROJECTS */
+.container__projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    // @include lg {
+    //     // flex-direction: column;
+    //     // column-gap: 5px;
+    // }
+}
+.projects {
+    /* margin: 20px; */
+    /* height: 250px; */
+    /* width: 550px; */
+    box-shadow: 5px 5px 10px $navyblue;
+    /* max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start; */
+    background-color: #FFF;
+    transition: 1s;
+    /* overflow: hidden; */
+  
+    // @include media-q(md){
+    //     background-color: #189AB4;
+    // }
+}
+.projects:hover {
+    scale: 1.05;
+    box-shadow: 5px 5px 10px $navyblue;
+}
+/* .projects:hover .projects__image {
+
+} */
+/* .projects__image {
+    max-width: 250px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 1s;
+    scale: 1.1;
+} */
+/* .projects__image:hover {
+
+}
+.projects__image:hover .projects__description {
+
+} */
+.projects__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    /* list-style-type: none; */
+    color: $bluegrotto;
+    /* margin-left: 20px; */
+    /* padding: 15px; */
+    /* line-height: 2.5rem; */
+}
+/* .projects__description li a {
+    color: $bluegrotto;
+} */
+/* .projects__title {
+    margin-bottom: 0px;
+} */
+
+/* ABOUT */
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.about__image {
+    max-width: 500px;
+}
+.about__text {
+    font-size: 1.2rem;
+    max-width: 700px;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.form__input, .form__textarea {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.form__input label, .form__textarea label {
+    margin-bottom: 5px;
+}
+.form__textarea textarea {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    background: rgba(255, 255, 255, 0.3);
+}
+.form__input input {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    display: block;    
+}
+.form__button button {
+    box-shadow: 4px 4px 8px;
+    background-color: $bluegrotto;
+    padding: 5px 20px;
+    color: $babyblue;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 5px 5px 10px $navyblue;
+}
+.form__button button:hover {
+    cursor: pointer;
+    color:#FFF;
+    background-color: $navyblue;
+    box-shadow: 3px 3px 6px $navyblue;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+}
+
+@media only screen and (max-width: 576px)  {
+@for $i from 1 through 12 {
+    .grid-#{$i} {
+        grid-column: span ($i);
+    }
+}
+}
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+//MEDIAS
+@mixin media-q($breakpoint){
+    @if map-has-key($breakpoints, $breakpoint){
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content
+        }
+    } @else {
+        @warn "El valor '#{ $breakpoint }' no ha sido declarado como breakpoint";
+    }
+}

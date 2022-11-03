@@ -1,0 +1,30 @@
+/****** FOOTER ******/
+.df-footer {
+    margin-top: 15px;
+}
+.df-footer ul{
+    color: #189AB4;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $navyblue;
+    padding: 15px 20px;
+    margin: 0;
+}
+.df-footer ul li {
+    align-items: center;
+    padding: 10px;
+    transition: 1s;
+}
+.df-footer ul li:hover {
+    transform: rotate(360deg);
+}
+.df-footer ul li a{
+    color: #D4F1F4;
+}
+.df-footer ul li a:hover {
+    color: #189AB4;
+}
+/****** FIN DEL FOOTER ******/

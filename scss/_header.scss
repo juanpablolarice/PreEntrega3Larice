@@ -1,0 +1,22 @@
+/****** HEADER ******/
+.navbar {
+    background-color: #189AB4;
+}
+.nav-item .nav-link {
+    color: #FFF;
+}
+.nav-link:hover {
+    color: $navyblue;
+}
+.brand {
+    color: #D4F1F4;
+}
+.brand:hover {
+    color: $navyblue;
+}
+.active {
+    font-style: italic;
+    font-weight: 600 !important;
+    color: #FFF !important;
+}
+/****** FIN DEL HEADER ******/

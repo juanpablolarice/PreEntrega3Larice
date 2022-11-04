@@ -1,3 +1,11 @@
+@media only screen and (max-width: 576px)  {
+    @for $i from 1 through 12 {
+        .grid-#{$i} {
+            grid-column: span ($i);
+        }
+    }
+}
+
 $breakpoints: (
     xs: 0,
     sm: 576px,
